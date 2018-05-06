@@ -60,9 +60,9 @@ set incsearch
 " 保存されていないファイルがあるときでも別のファイルを開けるようにする
 set hidden
 " 不可視文字を表示する
-set list
+" set list
 " タブと行の続きを可視化する
-set listchars=tab:>\ ,extends:<
+" set listchars=tab:>\ ,extends:<
 " 行番号を表示する
 set number
 " 対応する括弧やブレースを表示する
