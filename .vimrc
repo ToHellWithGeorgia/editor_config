@@ -69,6 +69,8 @@ set number
 set showmatch
 " 改行時に前の行のインデントを継続する
 set autoindent
+" Python comment
+autocmd BufRead *.py inoremap # X<c-h>#<space>
 " 改行時に入力された行の末尾に合わせて次の行のインデントを増減する
 set smartindent
 " タブ文字の表示幅
