@@ -70,7 +70,7 @@ set showmatch
 " 改行時に前の行のインデントを継続する
 set autoindent
 " Python comment
-autocmd BufRead *.py inoremap # X<c-h>#<space>
+" autocmd BufRead *.py inoremap # X<c-h>#<space>
 " 改行時に入力された行の末尾に合わせて次の行のインデントを増減する
 set smartindent
 " タブ文字の表示幅
@@ -84,5 +84,12 @@ set whichwrap=b,s,h,l,<,>,[,]
 2mat ErrorMsg '\%80v'
 " 構文毎に文字色を変化させる
 syntax on
+" y default to copy to clipboard
+nnoremap y "+y
+vnoremap y "+y
+" F2 to toggle paste mode (no indentation)
+nnoremap <F2> :set invpaste paste?<CR>
+set pastetoggle=<F2>
+set showmode
 
 colorscheme desert
